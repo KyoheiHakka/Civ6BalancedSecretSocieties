@@ -6,6 +6,26 @@
 UPDATE GovernorPromotionConditions SET HiddenWithoutPrereqs=0;
 UPDATE GovernorPromotionConditions SET EarliestGameEra = NULL;
 
+UPDATE SecretSocieties
+SET DiscoverAtGoodyHutBaseChance = '85'
+WHERE SecretSocietyType == 'SECRETSOCIETY_SANGUINE_PACT';
+
+UPDATE SecretSocieties
+SET DiscoverAtGoodyHutBaseChance = '60'
+WHERE SecretSocietyType == 'SECRETSOCIETY_HERMETIC_ORDER';
+
+UPDATE SecretSocieties
+SET DiscoverAtGoodyHutBaseChance = '75'
+WHERE SecretSocietyType == 'SECRETSOCIETY_OWLS_OF_MINERVA';
+
+UPDATE SecretSocieties
+SET DiscoverAtCityStateBaseChance = '50'
+WHERE DiscoverAtCityStateBaseChance = 0;
+
+UPDATE SecretSocieties
+SET DiscoverAtNaturalWonderBaseChance = '50'
+WHERE DiscoverAtNaturalWonderBaseChance = 0;
+
 -- <!-- レイラインの隣接ボーナス 科学のみ +3 -->
 UPDATE Adjacency_YieldChanges
 SET YieldChange = 3
@@ -13,10 +33,10 @@ WHERE ID == 'LeyLine_Science';
 
 -- <!-- キャンパスを持ってたらの条件付 -->
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
-('CITY_HAS_DISTRICT_CAMPUS',    'REQUIREMENTSET_TEST_ALL');
+('CITY_HAS_DISTRICT_CAMPUS', 'REQUIREMENTSET_TEST_ALL');
 
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
-('CITY_HAS_DISTRICT_CAMPUS',    'REQUIRES_CITY_HAS_CAMPUS');
+('CITY_HAS_DISTRICT_CAMPUS', 'REQUIRES_CITY_HAS_CAMPUS');
 
 -- <!-- キャンパスの住宅+2 -->
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
@@ -82,10 +102,6 @@ INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES
 ('MODIFIER_KH_MINERVA_TRADE_BONUS_YIELD_GOLD', 'Preview', 'LOC_KH_MINERVA_TRADE_BONUS_YIELD_GOLD_DESCRIPTION');
 
 -- -- <!-- 吸血鬼 -->
--- -- <!-- こやから出る -->
-UPDATE SecretSocieties
-SET DiscoverAtGoodyHutBaseChance = '85'
-WHERE SecretSocietyType == 'SECRETSOCIETY_SANGUINE_PACT';
 
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES 
 ('MODIFIER_KH_VAMPIRE_POST_COMBAT_YIELD_GOLD', 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD'),
