@@ -132,8 +132,3 @@ INSERT INTO Types (Type, Kind) VALUES
 
 INSERT INTO TypeTags (Type, Tag) VALUES
 ('Ability_KH_VAMPIRE_TRAIT_POST_COMBAT_YIELD', 'CLASS_VAMPIRE');
-
--- <!-- 移動力 4 -->
-UPDATE Units
-SET BaseMoves = '4'
-WHERE UnitType == 'UNIT_VAMPIRE';
