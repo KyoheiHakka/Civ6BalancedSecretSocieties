@@ -3,6 +3,24 @@
 -- DateCreated: 2024/11/10
 --------------------------------------------------------------
 
+
+-- --
+-- -- DEBUG
+-- --
+
+-- INSERT OR IGNORE INTO CivicModifiers (CivicType, ModifierId) VALUES
+-- 	('CIVIC_CODE_OF_LAWS', 'CIVIC_GRANT_PLAYER_GOVERNOR_POINTS');
+
+-- UPDATE ModifierArguments
+-- SET Value = 5
+-- WHERE ModifierId = 'CIVIC_GRANT_PLAYER_GOVERNOR_POINTS';
+
+-- --
+-- --
+-- --
+
+
+
 UPDATE GovernorPromotionConditions SET HiddenWithoutPrereqs=0;
 UPDATE GovernorPromotionConditions SET EarliestGameEra = NULL;
 
