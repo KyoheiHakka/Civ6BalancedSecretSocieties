@@ -10,7 +10,7 @@ SET Text = '大学に取ってかわる「錬金術協会」が建設可能に�
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_HERMETIC_ORDER_2_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'レイラインの力を得てアピールが最高のタイルは全ての産出が+1される。'
+SET Text = 'レイラインの力を得てアピールが最高のタイルは[ICON_SCIENCE]科学、[ICON_CULTURE]文化、[ICON_FAITH]信仰、[ICON_GOLD]ゴールドの産出が+1される。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_HERMETIC_ORDER_3_DESCRIPTION';
 
 UPDATE LocalizedText
@@ -19,7 +19,7 @@ WHERE Tag = 'LOC_GOVERNOR_PROMOTION_HERMETIC_ORDER_4_DESCRIPTION';
 
 
 UPDATE LocalizedText
-SET Text = '現在の政府に経済政策スロット+1。[ICON_TradeRoute]交易路の上限+1。都市国家に[ICON_TradeRoute]交易路を繋いだ際にその都市国家に無償の[Icon_Envoy]代表団を1つ派遣する。国外への[ICON_TradeRoute]交易路から追加の[ICON_FOOD]食料+2、[ICON_PRODUCTION]生産力+2、[ICON_GOLD]ゴールド+4、[ICON_SCIENCE]科学と[ICON_CULTURE]文化+1が得られる。全ての商業ハブは影響力+1を得る。'
+SET Text = '現在の政府に経済政策スロット+1。[ICON_TradeRoute]交易路の上限+1。都市国家に[ICON_TradeRoute]交易路を繋いだ際にその都市国家に無償の[Icon_Envoy]代表団を1つ派遣する。国外への[ICON_TradeRoute]交易路から追加の[ICON_FOOD]食料+2、[ICON_PRODUCTION]生産力+2、[ICON_GOLD]ゴールド+4、[ICON_SCIENCE]科学と[ICON_CULTURE]文化+1が得られる。影響力が+1される。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_OWLS_OF_MINERVA_1_DESCRIPTION';
 
 UPDATE LocalizedText
@@ -27,7 +27,7 @@ SET Text = '現在の政府に外交政策スロット+1。[ICON_TradeRoute]交�
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_OWLS_OF_MINERVA_2_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '現在の政府にワイルドカード政策スロット+1。[ICON_TradeRoute]交易路の上限+1。スパイ[ICON_SPY]の上限数+2。自文明のスパイが領土内にいる都市は[ICON_AMENITIES]快適性+1、ターン毎の忠誠心+4'
+SET Text = '現在の政府にワイルドカード政策スロット+1。[ICON_TradeRoute]交易路の上限+1。スパイの上限数+2。自文明のスパイが領土内にいる都市は[ICON_AMENITIES]快適性+1、ターン毎の忠誠心+4'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_OWLS_OF_MINERVA_3_DESCRIPTION';
 
 UPDATE LocalizedText
@@ -36,7 +36,7 @@ WHERE Tag = 'LOC_GOVERNOR_PROMOTION_OWLS_OF_MINERVA_4_DESCRIPTION';
 
 
 UPDATE LocalizedText
-SET Text = '吸血鬼1ユニットを獲得する。'
+SET Text = '[ICON_Capital] 首都に吸血鬼1ユニットを獲得する。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_SANGUINE_PACT_1_DESCRIPTION';
 
 UPDATE LocalizedText
@@ -44,17 +44,21 @@ SET Text = '吸血鬼が「威圧」するようになる。(隣接する敵ユ�
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_SANGUINE_PACT_2_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '吸血鬼1ユニットを獲得する。吸血鬼は略奪による[ICON_MOVEMENT]移動力の消費が1になる。吸血鬼は倒した敵を捕獲する。'
+SET Text = '[ICON_Capital] 首都に吸血鬼1ユニットを獲得する。吸血鬼は略奪による[ICON_MOVEMENT]移動力の消費が1になる。吸血鬼は倒した敵を一定の確率で捕獲する。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_SANGUINE_PACT_3_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = '吸血鬼は自文明全体で最大4つまで吸血鬼の城を建設できる。自文明の全ての戦闘ユニットは戦闘に勝利した時に体力を回復する。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_SANGUINE_PACT_4_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = '敵ユニットを倒すと [ICON_Damaged] 体力+30。'
+WHERE Tag = 'LOC_ABILITY_TOMYRIS_HEAL_AFTER_DEFEATING_UNIT_DESCRIPTION';
+
 
 UPDATE LocalizedText
-SET Text = '「闇の召還」のプロジェクトが解禁される。聖地は隣接ボーナスに等しい[ICON_PRODUCTION]生産力を得る。'
-WHERE Tag = 'LOC_GOVERNOR_PROMOTION_VOIDSINGERS_4_DESCRIPTION';
+SET Text = 'カルト教団員が解禁される。カルト教団員はチャージを使用して忠誠心を下げ、虚無の遺物を生み出す。聖地は隣接ボーナスに等しい[ICON_PRODUCTION]生産力を得る。'
+WHERE Tag = 'LOC_GOVERNOR_PROMOTION_VOIDSINGERS_3_DESCRIPTION';
 
 
 INSERT OR IGNORE INTO LocalizedText (Language, Tag, Text) VALUES
