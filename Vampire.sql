@@ -109,6 +109,3 @@ WHERE
 -- 全ての戦闘ユニットは敵を倒した時に少し回復する
 INSERT OR IGNORE INTO GovernorPromotionModifiers (GovernorPromotionType, ModifierId) VALUES
 	('GOVERNOR_PROMOTION_SANGUINE_PACT_4', 'HEAL_AFTER_DEFEATING_UNIT');
-
-INSERT OR IGNORE INTO CivicModifiers (CivicType, ModifierId) VALUES
-	('CIVIC_CODE_OF_LAWS', 'CIVIC_GRANT_PLAYER_GOVERNOR_POINTS');

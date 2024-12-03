@@ -2,7 +2,7 @@
 --------------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'レイライン資源の位置が明らかになる。レイラインはすべての専門区域に大きな隣接ボーナスをもたらす。全てのキャンパスは[ICON_HOUSING]+2と[ICON_AMENITIES]+1を得る。キャンパスを持つ都市は追加の区域を建設できる。'
+SET Text = 'レイライン資源の位置が明らかになる。レイラインはすべての専門区域に大きな隣接ボーナスをもたらす。全てのキャンパスは[ICON_HOUSING]+2と[ICON_AMENITIES]+1を得る。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_HERMETIC_ORDER_1_DESCRIPTION';
 
 UPDATE LocalizedText
@@ -10,20 +10,20 @@ SET Text = '大学に取ってかわる「錬金術協会」が建設可能に�
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_HERMETIC_ORDER_2_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'レイラインの力を得てアピールが最高のタイルは[ICON_SCIENCE]科学、[ICON_CULTURE]文化、[ICON_FAITH]信仰、[ICON_GOLD]ゴールドの産出が+1される。'
+SET Text = 'レイラインがあるパネルの全ての産出が+1される。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_HERMETIC_ORDER_3_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '「オカルト研究」のプロジェクトが解禁される。レイラインの力はさらに強まりアピールが最高のタイルは全ての産出が更に+1される。'
+SET Text = '「オカルト研究」のプロジェクトが解禁される。レイラインの力はさらに強まりアピールが最高のタイルは全ての産出が+1される。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_HERMETIC_ORDER_4_DESCRIPTION';
 
 
 UPDATE LocalizedText
-SET Text = '現在の政府に経済政策スロット+1。[ICON_TradeRoute]交易路の上限+1。都市国家に[ICON_TradeRoute]交易路を繋いだ際にその都市国家に無償の[Icon_Envoy]代表団を1つ派遣する。国外への[ICON_TradeRoute]交易路から追加の[ICON_FOOD]食料+2、[ICON_PRODUCTION]生産力+2、[ICON_GOLD]ゴールド+4、[ICON_SCIENCE]科学と[ICON_CULTURE]文化+1が得られる。影響力が+1される。'
+SET Text = '現在の政府に経済政策スロット+1。[ICON_TradeRoute]交易路の上限+1。都市国家に[ICON_TradeRoute]交易路を繋いだ際にその都市国家に無償の[Icon_Envoy]代表団を1つ派遣する。国外への[ICON_TradeRoute]交易路から追加の[ICON_FOOD]食料+2、[ICON_PRODUCTION]生産力+2、[ICON_GOLD]ゴールド+4、[ICON_SCIENCE]科学と[ICON_CULTURE]文化+1が得られる。影響力が+2される。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_OWLS_OF_MINERVA_1_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '現在の政府に外交政策スロット+1。[ICON_TradeRoute]交易路の上限+1。銀行に取ってかわる「黄金の宝物庫」を建設可能になる。'
+SET Text = '現在の政府に経済政策スロット+1。銀行に取ってかわる「黄金の宝物庫」を建設可能になる。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_OWLS_OF_MINERVA_2_DESCRIPTION';
 
 UPDATE LocalizedText
@@ -31,7 +31,7 @@ SET Text = '現在の政府にワイルドカード政策スロット+1。[ICON_
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_OWLS_OF_MINERVA_3_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '現在の政府に経済政策スロット+1。[ICON_TradeRoute]交易路の上限+1。商業ハブは隣接ボーナスに等しい[ICON_PRODUCTION]生産力を得る。所持ゴールドの3%に相当する[ICON_GOLD]ゴールドを毎ターン得る。(最大1000ゴールドまで)攻撃的ミッションに成功した際に対象都市がターン毎に得られる[ICON_GOLD]ゴールド・[ICON_SCIENCE]科学力・[ICON_CULTURE]文化力・[ICON_FAITH]信仰力の50%を得る。'
+SET Text = '現在の政府に外交政策スロット+1。商業ハブは隣接ボーナスに等しい[ICON_PRODUCTION]生産力を得る。所持ゴールドの3%に相当する[ICON_GOLD]ゴールドを毎ターン得る。(最大1000ゴールドまで)攻撃的ミッションに成功した際に対象都市がターン毎に得られる[ICON_GOLD]ゴールド・[ICON_SCIENCE]科学力・[ICON_CULTURE]文化力・[ICON_FAITH]信仰力の50%を得る。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_OWLS_OF_MINERVA_4_DESCRIPTION';
 
 
