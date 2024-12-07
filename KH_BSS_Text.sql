@@ -14,7 +14,7 @@ SET Text = 'レイラインがあるパネルの全ての産出が+1される。
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_HERMETIC_ORDER_3_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '「オカルト研究」のプロジェクトが解禁される。レイラインの力はさらに強まりアピールが最高のタイルは全ての産出が+1される。'
+SET Text = '「オカルト研究」のプロジェクトが解禁される。キャンパスは隣接ボーナスに等しい生産力[ICON_PRODUCTION]を得る。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_HERMETIC_ORDER_4_DESCRIPTION';
 
 
