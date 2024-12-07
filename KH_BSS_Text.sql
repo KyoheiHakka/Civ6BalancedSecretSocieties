@@ -40,7 +40,7 @@ SET Text = '[ICON_Capital] 首都に吸血鬼1ユニットを獲得する。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_SANGUINE_PACT_1_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '吸血鬼が「威圧」するようになる。(隣接する敵ユニットの[ICON_Strength]戦闘力-5)。自文明の全てのユニットの[ICON_MOVEMENT]移動力が+1される。'
+SET Text = '吸血鬼が「威圧」するようになる(隣接する敵ユニットの[ICON_Strength]戦闘力-5)。自文明の全てのユニットの[ICON_MOVEMENT]移動力が+1される。'
 WHERE Tag = 'LOC_GOVERNOR_PROMOTION_SANGUINE_PACT_2_DESCRIPTION';
 
 UPDATE LocalizedText
@@ -57,8 +57,8 @@ WHERE Tag = 'LOC_ABILITY_TOMYRIS_HEAL_AFTER_DEFEATING_UNIT_DESCRIPTION';
 
 
 UPDATE LocalizedText
-SET Text = 'カルト教団員が解禁される。カルト教団員はチャージを使用して忠誠心を下げ、虚無の遺物を生み出す。聖地は隣接ボーナスに等しい[ICON_PRODUCTION]生産力を得る。'
-WHERE Tag = 'LOC_GOVERNOR_PROMOTION_VOIDSINGERS_3_DESCRIPTION';
+SET Text = '「闇の召還」のプロジェクトが解禁される。聖地は隣接ボーナスに等しい[ICON_PRODUCTION]生産力を得る。'
+WHERE Tag = 'LOC_GOVERNOR_PROMOTION_VOIDSINGERS_4_DESCRIPTION';
 
 
 INSERT OR IGNORE INTO LocalizedText (Language, Tag, Text) VALUES
